@@ -1,0 +1,86 @@
+:root {
+  /* Grayscale */
+  --able-gray-10: #141414;  
+  --able-gray-20: #2D2D2D;  
+  --able-gray-30: #3C3C3C;  
+  --able-gray-40: #484848;  
+  --able-gray-50: #646464;  
+
+  /* Text */
+  --able-text: #c4c4c4;     
+
+  /* Vibrant accents */
+  --able-hot-pink: #FF39D4;     
+  --able-fuchsia-tom: #FF2B6F;  
+  --able-peach: #FFA374;        
+  --able-coral: #FF94A6;        
+  --able-cyan: #19E9FF;         
+  --able-aqua: #5CFFE8;         
+  --able-orange: #F39420;       
+  --able-lemon: #FFF034;        
+  --able-pale-yellow: #F7F47C;  
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: Jost;
+    color: var(--able-gray-30);
+    background-color: var(--able-text);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    gap: 50px;
+}
+
+p {
+    font-size: 150px;
+    font-weight: bold;
+}
+
+button {
+    /* Nollställ allt */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+    border: none;
+    padding: 0;
+    margin: 0;
+    outline: none;
+    box-shadow: none;
+    border-radius: 0;
+    background: none;
+    cursor: pointer;
+    font: inherit;
+    text-align: center;
+    display: inline-block;
+
+    /* Dina egna stilar */
+    background-color: var(--able-gray-30);
+    color: var(--able-text);
+    width: 100px;
+    height: 50px;
+    line-height: 60px;
+    font-size: 18px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+/* Förhindra  hover/focus-effekter */
+button:hover,
+button:focus,
+button:active {
+    background-color: var(--able-gray-30);
+    color: var(--able-text);
+    outline: none;
+    box-shadow: none;
+}
